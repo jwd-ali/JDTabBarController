@@ -112,9 +112,7 @@ public class JDNavigationBar: UINavigationBar {
         
             
             if #available(iOS 13.0, *) {
-                if  (UIApplication.shared.windows.filter({$0.isKeyWindow}).first?.viewWithTag(999)) != nil {
-                    self.statusBar.removeFromSuperview()
-                }
+             
                 self.statusBar.frame = (UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.windowScene?.statusBarManager?.statusBarFrame) ?? CGRect.zero
                 self.statusBar.backgroundColor = self.color
                 self.statusBar.tag = 999

@@ -25,7 +25,6 @@ open class JDTabBarController: UIViewController {
     public var isRoundedOffsetOn:Bool = true {
         didSet { tabBar.isOffSetOn = isRoundedOffsetOn }
     }
-    
     private var selectIndex = 0
     private(set) public var previousSelectedIndex = 0
     public var viewControllers = [UIViewController]() {
