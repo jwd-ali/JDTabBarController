@@ -28,6 +28,7 @@
 		E31224CF2509000800DBDCE7 /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31224CC2509000800DBDCE7 /* AViewController.swift */; };
 		E31224D02509000800DBDCE7 /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31224CD2509000800DBDCE7 /* BViewController.swift */; };
 		E334477C250AD89C00C028C1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E334477B250AD89C00C028C1 /* DetailViewController.swift */; };
+		E334477E250B561900C028C1 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E334477D250B561900C028C1 /* Shape.swift */; };
 		E351FAAF250A4F4300C8C54B /* JDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E351FAAD250A4F4200C8C54B /* JDNavigationController.swift */; };
 		E351FAB0250A4F4300C8C54B /* JDNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E351FAAE250A4F4200C8C54B /* JDNavigationBar.swift */; };
 		E351FAB6250A508700C8C54B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E351FAB5250A508700C8C54B /* HomeViewController.swift */; };
@@ -60,6 +61,7 @@
 		E31224CC2509000800DBDCE7 /* AViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
 		E31224CD2509000800DBDCE7 /* BViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
 		E334477B250AD89C00C028C1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E334477D250B561900C028C1 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		E351FAAD250A4F4200C8C54B /* JDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JDNavigationController.swift; sourceTree = "<group>"; };
 		E351FAAE250A4F4200C8C54B /* JDNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JDNavigationBar.swift; sourceTree = "<group>"; };
 		E351FAB5250A508700C8C54B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				E31224AC2508FA1500DBDCE7 /* JDTabBarItem.swift */,
 				E312249B2508F95B00DBDCE7 /* JDTabBarController.swift */,
 				E31224A42508F99900DBDCE7 /* JDTabBar.swift */,
+				E334477D250B561900C028C1 /* Shape.swift */,
 			);
 			path = JDTabBar;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				E31224A52508F99900DBDCE7 /* JDTabBar.swift in Sources */,
 				E31224A72508F9A600DBDCE7 /* UIViewController+Extesion.swift in Sources */,
 				E31224B22508FA3700DBDCE7 /* YAPLayoutAttributes.swift in Sources */,
+				E334477E250B561900C028C1 /* Shape.swift in Sources */,
 				E31224A22508F98A00DBDCE7 /* UILabelFactory.swift in Sources */,
 				E31224B12508FA3700DBDCE7 /* YAPLayout.swift in Sources */,
 				E31224AD2508FA1500DBDCE7 /* JDTabBarItem.swift in Sources */,

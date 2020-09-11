@@ -6,46 +6,9 @@
 //
 
 import UIKit
-public enum Shape: Int {
-    case full
-    case upperRound
-    case lowerRound
-    case rounded
-    
-    
-    var maskCorenrs: CACornerMask {
-        get {
-            switch self {
-            case .full:
-                return  []
-            case .upperRound:
-                return [ .layerMaxXMinYCorner, .layerMinXMinYCorner ]
-            case .lowerRound:
-                return  [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
-            case .rounded:
-                return [.layerMaxXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner, .layerMinXMinYCorner]
-            }
-            
-        }
-    }
-    
-    var layoutMargins: [CGFloat] {
-        get {
-            switch self {
-            case .full, .upperRound:
-               return [0,0,0,0]
-            default:
-               return [5,5,0,10]
-            }
-        }
-    }
-    
-    
-}
-
 
 public protocol JDTabBarDelegate: AnyObject {
-     func tabBar(_ tabBar: JDTabBar, didSelectTabAt index: Int)
+    func tabBar(_ tabBar: JDTabBar, didSelectTabAt index: Int)
 }
 
 public class JDTabBar: UIView {
@@ -72,7 +35,7 @@ public class JDTabBar: UIView {
         }
     }
     
-    open var shapeType: Shape = .lowerRound {
+    open var shapeType: Shape = .upperRound {
         didSet{
             setNeedsDisplay()
         }
@@ -108,7 +71,6 @@ public class JDTabBar: UIView {
     }
     
     //MARK:- Views
-    
     private lazy var stackView = UIStackViewFactory.createStackView(with: .horizontal, alignment: .center, distribution: .fillEqually, spacing: 0)
     
     private lazy var innerCircleView: UIView = {
@@ -155,7 +117,6 @@ public class JDTabBar: UIView {
     
     private func commonInit() {
         setUp()
-        
     }
     
     public override func draw(_ rect: CGRect) {
@@ -163,12 +124,10 @@ public class JDTabBar: UIView {
         
         setupConstraints()
         cornerBackgroundView.backgroundColor = self.tabBarTintColor
-      
-       
-         cornerBackgroundView.layer.cornerRadius = bounds.midY - shapeType.layoutMargins.last!/2
+        
+        cornerBackgroundView.layer.cornerRadius = bounds.midY - shapeType.layoutMargins.last!/2
         cornerBackgroundView.layer.maskedCorners = shapeType.maskCorenrs
-      
-       
+        
         innerCircleView.backgroundColor = tabBarTintColor
         cornerBackgroundView.layoutIfNeeded()
         
@@ -207,13 +166,12 @@ private extension JDTabBar {
         
         innerCircleView.layer.cornerRadius = circleSize / 2
         outerCircleView.layer.cornerRadius = (innerCircleView.frame.size.height - circleBorderWidth) / 2
-
+        
         cornerBackgroundView.removeFromSuperview()
         insertSubview(cornerBackgroundView, at: 0)
-       
+        
         cornerBackgroundView
             .alignEdgesWithSuperview([.left, .right, .top, .bottom], constants:shapeType.layoutMargins)
-        
         
         outerCircleView
             .centerInSuperView()
@@ -234,7 +192,7 @@ extension JDTabBar {
             
             barView
                 .height(constant: stackView.bounds.maxY)
-        
+            
             self.stackView.addArrangedSubview(barView)
         }
     }
@@ -244,17 +202,17 @@ extension JDTabBar {
 
 extension JDTabBar {
     
-  private  var tabWidth: CGFloat {
+    private  var tabWidth: CGFloat {
         return (UIScreen.main.bounds.width / CGFloat(viewControllers.count))
     }
-
-   private var circleTransition: (startX:CGFloat, endX: CGFloat) {
+    
+    private var circleTransition: (startX:CGFloat, endX: CGFloat) {
         let startPoint_X = CGFloat(previousSelectedIndex) * CGFloat(tabWidth) - (tabWidth * 0.5)
         let endPoint_X = CGFloat(selectedIndex) * CGFloat(tabWidth) - (tabWidth * 0.5)
         return (startPoint_X,endPoint_X)
     }
     
-     func didSelectTab(index: Int) {
+    func didSelectTab(index: Int) {
         delegate?.tabBar(self, didSelectTabAt: index)
         if index + 1 == selectedIndex {return}
         
@@ -263,7 +221,7 @@ extension JDTabBar {
         
         outerCircleView.backgroundColor = colors[index]
         self.backgroundColor =  isOffSetOn ? colors[index] : tabBarTintColor
-
+        
         innerCircleView.layer.animateShapeSpring(from: circleTransition.startX, endX: circleTransition.endX)
         animateTabItem(index: index)
     }
@@ -271,11 +229,11 @@ extension JDTabBar {
 //MARK:- Animation shape
 private extension JDTabBar {
     
-     func animateTabItem(index: Int) {
-           self.stackView.arrangedSubviews.enumerated().forEach {
-               guard let tabView = $1 as? JDTabBarItem else { return }
-               ($0 == index ? tabView.animateTabSelected : tabView.animateTabDeSelect)()
-           }
-       }
+    func animateTabItem(index: Int) {
+        self.stackView.arrangedSubviews.enumerated().forEach {
+            guard let tabView = $1 as? JDTabBarItem else { return }
+            ($0 == index ? tabView.animateTabSelected : tabView.animateTabDeSelect)()
+        }
+    }
 }
 

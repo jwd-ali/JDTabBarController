@@ -27,14 +27,7 @@ class ViewController: JDTabBarController {
        
            
         viewControllers = [homeStoryboard, chatStoryboard,sleepStoryboard,musicStoryboard]
-    
-        
-     //   tabBar.shapeType = .upperRound
-     //   tabBar.tabBarTintColor = .red
-    //    self.isRoundedOffsetOn = false
-//        
-//        
-//        self.tabBarController?.tabBarItem
+
     }
     
 }

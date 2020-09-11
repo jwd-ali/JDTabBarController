@@ -29,7 +29,6 @@ public extension UIViewController {
         }
         set {
             objc_setAssociatedObject(self, &associateKey, newValue, .OBJC_ASSOCIATION_RETAIN)
-            
         }
     }
     
@@ -39,7 +38,7 @@ public extension UIViewController {
     }
     
     static func setUpTabBar() {
-        //Make sure This isn't a subclass of UIViewController, So that It applies to all UIViewController childs
+
         if self != UIViewController.self {
             return
         }
