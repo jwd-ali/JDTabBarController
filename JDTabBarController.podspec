@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   # s.license    = { :type => "MIT", :file => "FILE_LICENSE" }
   s.authors      = { "Jawad Ali" => "L060214@gmail.com" }
-  s.platforms    = { :ios => "9.0" }
+  s.platforms    = { :ios => "11.0" }
   s.source       = { :git => "https://github.com/jwd-ali/JDTabBarController.git", :tag => "#{s.version}" }
 
   s.source_files = "Sources/**/*.{h,m,swift}"
