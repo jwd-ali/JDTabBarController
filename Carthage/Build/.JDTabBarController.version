@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "eaca2fffb286e7c1e74a3946b020d8d69d24b759",
+  "iOS" : [
+    {
+      "name" : "JDTabBarController",
+      "hash" : "dbb35982beb52d015326158cb78486d0e155de54b034157ae5d34dcb9f8dd2c8",
+      "swiftToolchainVersion" : "5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)"
+    }
+  ]
+}

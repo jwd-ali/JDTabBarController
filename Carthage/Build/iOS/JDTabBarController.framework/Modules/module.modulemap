@@ -1,0 +1,11 @@
+framework module JDTabBarController {
+  umbrella header "JDTabBarController.h"
+
+  export *
+  module * { export * }
+}
+
+module JDTabBarController.Swift {
+    header "JDTabBarController-Swift.h"
+    requires objc
+}
