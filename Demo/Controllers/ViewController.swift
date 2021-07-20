@@ -25,8 +25,7 @@ class ViewController: JDTabBarController {
         sleepStoryboard.tabBarItem = UITabBarItem(title: "Report", image: UIImage(named: "report"), tag: 2)
         musicStoryboard.tabBarItem = UITabBarItem(title: "Alerts", image: UIImage(named: "notification"), tag: 3)
        
-           
-        viewControllers = [homeStoryboard, chatStoryboard,sleepStoryboard,musicStoryboard]
+        viewControllers = [homeStoryboard, chatStoryboard, sleepStoryboard, musicStoryboard]
 
     }
     

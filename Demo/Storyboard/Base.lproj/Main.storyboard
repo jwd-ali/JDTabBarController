@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,8 +16,8 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -53,7 +55,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="30w-6W-t25">
                                 <rect key="frame" x="41.5" y="248" width="331" height="400"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdZ-up-ElM" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdZ-up-ElM" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="331" height="70"/>
                                         <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -67,7 +69,7 @@
                                             <action selector="setStyle:" destination="rpn-H7-wJu" eventType="touchUpInside" id="D86-zF-moX"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oM3-ez-o2Z" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oM3-ez-o2Z" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="110" width="331" height="70"/>
                                         <color key="backgroundColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -81,7 +83,7 @@
                                             <action selector="setStyle:" destination="rpn-H7-wJu" eventType="touchUpInside" id="eIt-hm-gCf"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZN-Mc-lnG" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZN-Mc-lnG" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="220" width="331" height="70"/>
                                         <color key="backgroundColor" red="0.20000000000000001" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -95,7 +97,7 @@
                                             <action selector="setStyle:" destination="rpn-H7-wJu" eventType="touchUpInside" id="UdX-PQ-oq1"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agE-B6-DMN" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agE-B6-DMN" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="330" width="331" height="70"/>
                                         <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -112,13 +114,13 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="oQy-4P-PfL"/>
                         <color key="backgroundColor" red="0.58073639870000004" green="0.79196977619999998" blue="0.9764958024" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="30w-6W-t25" firstAttribute="centerY" secondItem="Nbo-Gj-azd" secondAttribute="centerY" id="6Y3-0Q-UHB"/>
                             <constraint firstItem="30w-6W-t25" firstAttribute="centerX" secondItem="Nbo-Gj-azd" secondAttribute="centerX" id="7DX-0t-8oy"/>
                             <constraint firstItem="30w-6W-t25" firstAttribute="width" secondItem="Nbo-Gj-azd" secondAttribute="width" multiplier="0.8" id="ii0-vS-qta"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="oQy-4P-PfL"/>
                     </view>
                     <navigationItem key="navigationItem" id="gQv-tK-X3d"/>
                 </viewController>
@@ -129,8 +131,8 @@
         <!--Navigation Controller-->
         <scene sceneID="b2J-8T-g73">
             <objects>
-                <navigationController storyboardIdentifier="CHAT_ID" id="J6b-ng-aCF" customClass="JDNavigationController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5kU-yS-V7R" customClass="JDNavigationBar" customModule="Demo" customModuleProvider="target">
+                <navigationController storyboardIdentifier="CHAT_ID" id="J6b-ng-aCF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="5kU-yS-V7R">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -151,15 +153,15 @@
                         <viewControllerLayoutGuide type="bottom" id="UfB-MR-QHZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Qc6-Ar-mUi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljg-yN-X60" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
-                                <rect key="frame" x="57" y="413" width="300" height="70"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljg-yN-X60" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
+                                <rect key="frame" x="57" y="369" width="300" height="70"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="AGc-CP-Uoy"/>
-                                    <constraint firstAttribute="width" constant="300" id="Hhy-im-HPw"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Hhy-im-HPw"/>
                                     <constraint firstAttribute="height" constant="70" id="Jx9-sH-9R0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
@@ -171,9 +173,9 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jXp-HV-5Ua">
-                                <rect key="frame" x="29.5" y="526" width="355" height="40"/>
+                                <rect key="frame" x="29.5" y="482" width="355" height="40"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTH-5d-51R" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTH-5d-51R" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -184,7 +186,7 @@
                                             <action selector="changeTintColor:" destination="gkC-ZT-Yq2" eventType="touchUpInside" id="0r6-TE-ycN"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Urp-UA-Hxv" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Urp-UA-Hxv" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
                                         <rect key="frame" x="45" y="0.0" width="40" height="40"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -195,7 +197,7 @@
                                             <action selector="changeTintColor:" destination="gkC-ZT-Yq2" eventType="touchUpInside" id="M1o-MP-m3a"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ov-Ao-JCL" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ov-Ao-JCL" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
                                         <rect key="frame" x="90" y="0.0" width="40" height="40"/>
                                         <color key="backgroundColor" red="0.41179959262460231" green="0.018908633089448668" blue="0.57102633248730972" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -206,7 +208,7 @@
                                             <action selector="changeTintColor:" destination="gkC-ZT-Yq2" eventType="touchUpInside" id="qAl-3t-4zn"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6we-63-ZuA" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6we-63-ZuA" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
                                         <rect key="frame" x="135" y="0.0" width="40" height="40"/>
                                         <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -217,7 +219,7 @@
                                             <action selector="changeTintColor:" destination="gkC-ZT-Yq2" eventType="touchUpInside" id="NcH-8z-umi"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3U-wr-qSe" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3U-wr-qSe" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
                                         <rect key="frame" x="180" y="0.0" width="40" height="40"/>
                                         <color key="backgroundColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -228,9 +230,9 @@
                                             <action selector="changeTintColor:" destination="gkC-ZT-Yq2" eventType="touchUpInside" id="XsT-Ua-pAz"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCb-jU-Z4R" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCb-jU-Z4R" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
                                         <rect key="frame" x="225" y="0.0" width="40" height="40"/>
-                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ZCb-jU-Z4R" secondAttribute="height" id="iE6-2e-PBU"/>
                                             <constraint firstAttribute="height" constant="40" id="mjv-PI-l4h"/>
@@ -239,9 +241,9 @@
                                             <action selector="changeTintColor:" destination="gkC-ZT-Yq2" eventType="touchUpInside" id="cRz-Bm-zRm"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IO7-W7-sXI" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IO7-W7-sXI" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
                                         <rect key="frame" x="270" y="0.0" width="40" height="40"/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="scrollViewTexturedBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="IO7-W7-sXI" secondAttribute="height" id="CO8-Iy-qv0"/>
                                             <constraint firstAttribute="height" constant="40" id="EI1-pI-UA8"/>
@@ -250,7 +252,7 @@
                                             <action selector="changeTintColor:" destination="gkC-ZT-Yq2" eventType="touchUpInside" id="pId-fI-b1n"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rf5-Th-zOE" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rf5-Th-zOE" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
                                         <rect key="frame" x="315" y="0.0" width="40" height="40"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -294,6 +296,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="h8o-tt-Mcc"/>
                         <color key="backgroundColor" red="0.99681717160000005" green="0.80691117050000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="jXp-HV-5Ua" firstAttribute="centerX" secondItem="Qc6-Ar-mUi" secondAttribute="centerX" id="AHm-GO-twq"/>
@@ -301,7 +304,6 @@
                             <constraint firstItem="Ljg-yN-X60" firstAttribute="centerY" secondItem="Qc6-Ar-mUi" secondAttribute="centerY" id="gyy-B9-7lc"/>
                             <constraint firstItem="Ljg-yN-X60" firstAttribute="centerX" secondItem="Qc6-Ar-mUi" secondAttribute="centerX" id="iH6-jr-ajy"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="h8o-tt-Mcc"/>
                     </view>
                     <navigationItem key="navigationItem" id="RZD-tN-HO2"/>
                 </viewController>
@@ -324,7 +326,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="MXU-oT-fjN">
                                 <rect key="frame" x="62" y="248" width="290" height="400"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRv-ZI-pQb" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRv-ZI-pQb" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="70"/>
                                         <color key="backgroundColor" red="0.52330762149999999" green="0.79547286029999997" blue="0.99610573049999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -338,7 +340,7 @@
                                             <action selector="goTo:" destination="RRk-U5-sd7" eventType="touchUpInside" id="nnb-5K-SZO"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KR6-NO-q0Q" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KR6-NO-q0Q" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="110" width="290" height="70"/>
                                         <color key="backgroundColor" red="0.99681717160000005" green="0.80691117050000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -352,7 +354,7 @@
                                             <action selector="goTo:" destination="RRk-U5-sd7" eventType="touchUpInside" id="wab-WP-cxj"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLu-jS-ymI" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLu-jS-ymI" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="220" width="290" height="70"/>
                                         <color key="backgroundColor" red="0.36484032869999999" green="0.82584607600000004" blue="0.89805412289999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -366,7 +368,7 @@
                                             <action selector="goTo:" destination="RRk-U5-sd7" eventType="touchUpInside" id="V0w-Ik-a93"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFl-g5-bhV" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFl-g5-bhV" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="330" width="290" height="70"/>
                                         <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="0.4939800942" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -383,13 +385,13 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="mJ3-6O-mrP"/>
                         <color key="backgroundColor" red="0.94686931370000005" green="0.65697449450000001" blue="0.54507237669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="MXU-oT-fjN" firstAttribute="centerY" secondItem="KAv-iB-Le6" secondAttribute="centerY" id="7s6-Ox-uHk"/>
                             <constraint firstItem="lRv-ZI-pQb" firstAttribute="width" secondItem="KAv-iB-Le6" secondAttribute="width" multiplier="0.7" id="Ilz-Da-xyr"/>
                             <constraint firstItem="MXU-oT-fjN" firstAttribute="centerX" secondItem="KAv-iB-Le6" secondAttribute="centerX" id="QL3-vn-RUI"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="mJ3-6O-mrP"/>
                     </view>
                     <navigationItem key="navigationItem" id="LNw-rf-e28"/>
                     <connections>
@@ -412,13 +414,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSN-nK-iLl" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSN-nK-iLl" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
                                 <rect key="frame" x="62" y="413" width="290" height="70"/>
                                 <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="0.5642390839041096" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="Jzb-fh-mPH"/>
                                     <constraint firstAttribute="height" constant="70" id="Pw4-fF-VmM"/>
-                                    <constraint firstAttribute="width" constant="290" id="a6j-Wn-kjN"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="290" id="a6j-Wn-kjN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Present Controller">
@@ -429,12 +431,12 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="2It-qp-OyO"/>
                         <color key="backgroundColor" red="0.99365431069999999" green="0.64145708079999997" blue="0.52153867480000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="gSN-nK-iLl" firstAttribute="centerX" secondItem="PyW-Os-EaX" secondAttribute="centerX" id="993-WB-kd3"/>
                             <constraint firstItem="gSN-nK-iLl" firstAttribute="centerY" secondItem="PyW-Os-EaX" secondAttribute="centerY" id="ZeC-kj-AUp"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="2It-qp-OyO"/>
                     </view>
                     <navigationItem key="navigationItem" title="Pushed Controller" id="kWi-b6-G16"/>
                     <userDefinedRuntimeAttributes>
@@ -456,8 +458,8 @@
                     <view key="view" contentMode="scaleToFill" id="8ty-67-d56">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.99365431069999999" green="0.64145708079999997" blue="0.52153867480000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="b6r-Wd-Mhq"/>
+                        <color key="backgroundColor" red="0.99365431069999999" green="0.64145708079999997" blue="0.52153867480000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="bY3-sN-QNp"/>
                 </viewController>
@@ -496,7 +498,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="RkN-03-ET7">
                                 <rect key="frame" x="41.5" y="358" width="331" height="180"/>
                                 <subviews>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucc-5y-pYW" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucc-5y-pYW" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="331" height="70"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -510,7 +512,7 @@
                                             <segue destination="ifY-1g-U38" kind="show" id="SMM-0F-jbe"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5P-4O-eRG" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5P-4O-eRG" customClass="ShadowButton" customModule="Demo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="110" width="331" height="70"/>
                                         <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="0.4939800942" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -527,13 +529,13 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="g2O-Sp-mdK"/>
                         <color key="backgroundColor" red="0.48694306609999999" green="0.81811630729999996" blue="0.88628798720000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="RkN-03-ET7" firstAttribute="centerY" secondItem="Cyx-kB-oig" secondAttribute="centerY" id="2ac-mh-hxx"/>
                             <constraint firstItem="RkN-03-ET7" firstAttribute="width" secondItem="Cyx-kB-oig" secondAttribute="width" multiplier="0.8" id="CyE-3o-Hbe"/>
                             <constraint firstItem="RkN-03-ET7" firstAttribute="centerX" secondItem="Cyx-kB-oig" secondAttribute="centerX" id="GYI-oo-sq6"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="g2O-Sp-mdK"/>
                     </view>
                     <navigationItem key="navigationItem" title="Alerts" id="aUg-Z6-Ssm"/>
                 </viewController>
@@ -551,21 +553,21 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TAG-1w-2O5">
                                 <rect key="frame" x="10" y="108" width="394" height="754"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="7GG-vi-dNo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7GG-vi-dNo" firstAttribute="bottom" secondItem="TAG-1w-2O5" secondAttribute="bottom" id="KaY-cm-dE4"/>
                             <constraint firstItem="7GG-vi-dNo" firstAttribute="trailing" secondItem="TAG-1w-2O5" secondAttribute="trailing" constant="10" id="Paj-Qw-mEK"/>
                             <constraint firstItem="TAG-1w-2O5" firstAttribute="leading" secondItem="7GG-vi-dNo" secondAttribute="leading" constant="10" id="rua-kV-47n"/>
                             <constraint firstItem="TAG-1w-2O5" firstAttribute="top" secondItem="7GG-vi-dNo" secondAttribute="top" constant="20" id="wUy-Em-OzO"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="7GG-vi-dNo"/>
                     </view>
                     <navigationItem key="navigationItem" title="Details" id="uSu-y0-c0j"/>
                     <userDefinedRuntimeAttributes>
@@ -579,8 +581,8 @@
         <!--Navigation Controller-->
         <scene sceneID="oLf-Sx-7Fp">
             <objects>
-                <navigationController storyboardIdentifier="MUSIC_ID" id="HPU-8g-r3y" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="55K-mA-5Nr">
+                <navigationController storyboardIdentifier="MUSIC_ID" id="HPU-8g-r3y" customClass="JDNavigationController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="55K-mA-5Nr" customClass="JDNavigationBar" customModule="Demo" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -604,11 +606,12 @@
                                 <rect key="frame" x="10" y="108" width="394" height="754"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="fvb-Ye-Tjo"/>
                         <color key="backgroundColor" red="0.36484032869999999" green="0.82584607600000004" blue="0.89805412289999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="qNz-fG-Vmb" firstAttribute="leading" secondItem="fvb-Ye-Tjo" secondAttribute="leading" constant="10" id="OtH-0D-SNt"/>
@@ -616,7 +619,6 @@
                             <constraint firstItem="qNz-fG-Vmb" firstAttribute="top" secondItem="fvb-Ye-Tjo" secondAttribute="top" constant="20" id="iHr-Od-hHd"/>
                             <constraint firstItem="fvb-Ye-Tjo" firstAttribute="trailing" secondItem="qNz-fG-Vmb" secondAttribute="trailing" constant="10" id="xcb-1V-9jZ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="fvb-Ye-Tjo"/>
                     </view>
                     <navigationItem key="navigationItem" title="Details" id="lPs-oK-bia"/>
                     <userDefinedRuntimeAttributes>
@@ -628,4 +630,83 @@
             <point key="canvasLocation" x="2226" y="2281"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="6Ov-Ao-JCL">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="6we-63-ZuA">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="D3U-wr-qSe">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="IO7-W7-sXI">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="KFl-g5-bhV">
+            <size key="intrinsicContentSize" width="134" height="34"/>
+        </designable>
+        <designable name="KR6-NO-q0Q">
+            <size key="intrinsicContentSize" width="113" height="34"/>
+        </designable>
+        <designable name="Ljg-yN-X60">
+            <size key="intrinsicContentSize" width="219" height="34"/>
+        </designable>
+        <designable name="MdZ-up-ElM">
+            <size key="intrinsicContentSize" width="96" height="34"/>
+        </designable>
+        <designable name="PTH-5d-51R">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="RZN-Mc-lnG">
+            <size key="intrinsicContentSize" width="236" height="34"/>
+        </designable>
+        <designable name="Urp-UA-Hxv">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="ZCb-jU-Z4R">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="agE-B6-DMN">
+            <size key="intrinsicContentSize" width="144" height="34"/>
+        </designable>
+        <designable name="gSN-nK-iLl">
+            <size key="intrinsicContentSize" width="157" height="34"/>
+        </designable>
+        <designable name="h5P-4O-eRG">
+            <size key="intrinsicContentSize" width="236" height="34"/>
+        </designable>
+        <designable name="lRv-ZI-pQb">
+            <size key="intrinsicContentSize" width="103" height="34"/>
+        </designable>
+        <designable name="oM3-ez-o2Z">
+            <size key="intrinsicContentSize" width="235" height="34"/>
+        </designable>
+        <designable name="rf5-Th-zOE">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="ucc-5y-pYW">
+            <size key="intrinsicContentSize" width="192" height="34"/>
+        </designable>
+        <designable name="vLu-jS-ymI">
+            <size key="intrinsicContentSize" width="103" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411764705878" green="0.44313725490196082" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

@@ -14,9 +14,6 @@ class PinkViewController: UIViewController {
     override func viewDidLoad() {
         
         self.title = "Reports"
-     jDNavigationController?.jDnavigationBar?.changeColor(#colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1))
-      //  self.view.centerXAnchor
-      //  self.tabBarController
         super.viewDidLoad()
 
         
@@ -39,7 +36,7 @@ class PinkViewController: UIViewController {
     }
 
     @IBAction func goTo(_ sender: UIButton) {
-        self.jDTabBarController?.selectedIndex = sender.tag
+       // self.jDTabBarController?.selectedIndex = sender.tag
     }
     
 }

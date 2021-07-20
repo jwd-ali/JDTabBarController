@@ -27,10 +27,12 @@
 		E31224CE2509000800DBDCE7 /* PinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31224CB2509000800DBDCE7 /* PinkViewController.swift */; };
 		E31224CF2509000800DBDCE7 /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31224CC2509000800DBDCE7 /* AViewController.swift */; };
 		E31224D02509000800DBDCE7 /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31224CD2509000800DBDCE7 /* BViewController.swift */; };
+		E314E9F925F1562E00DB0480 /* MainA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E314E9F825F1562E00DB0480 /* MainA.storyboard */; };
+		E314EA1125F1578000DB0480 /* JTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E314EA0925F156DC00DB0480 /* JTabBarItem.swift */; };
+		E314EA1625F1578400DB0480 /* JTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E314EA0825F156DC00DB0480 /* JTabBarController.swift */; };
+		E314EA1B25F1578800DB0480 /* JTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E314EA0725F156DC00DB0480 /* JTabBar.swift */; };
 		E334477C250AD89C00C028C1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E334477B250AD89C00C028C1 /* DetailViewController.swift */; };
 		E334477E250B561900C028C1 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E334477D250B561900C028C1 /* Shape.swift */; };
-		E351FAAF250A4F4300C8C54B /* JDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E351FAAD250A4F4200C8C54B /* JDNavigationController.swift */; };
-		E351FAB0250A4F4300C8C54B /* JDNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E351FAAE250A4F4200C8C54B /* JDNavigationBar.swift */; };
 		E351FAB6250A508700C8C54B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E351FAB5250A508700C8C54B /* HomeViewController.swift */; };
 		E351FAB8250A55AD00C8C54B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E351FAB7250A55AD00C8C54B /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
@@ -60,10 +62,12 @@
 		E31224CB2509000800DBDCE7 /* PinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinkViewController.swift; sourceTree = "<group>"; };
 		E31224CC2509000800DBDCE7 /* AViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
 		E31224CD2509000800DBDCE7 /* BViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
+		E314E9F825F1562E00DB0480 /* MainA.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainA.storyboard; sourceTree = "<group>"; };
+		E314EA0725F156DC00DB0480 /* JTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTabBar.swift; sourceTree = "<group>"; };
+		E314EA0825F156DC00DB0480 /* JTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTabBarController.swift; sourceTree = "<group>"; };
+		E314EA0925F156DC00DB0480 /* JTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTabBarItem.swift; sourceTree = "<group>"; };
 		E334477B250AD89C00C028C1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E334477D250B561900C028C1 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
-		E351FAAD250A4F4200C8C54B /* JDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JDNavigationController.swift; sourceTree = "<group>"; };
-		E351FAAE250A4F4200C8C54B /* JDNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JDNavigationBar.swift; sourceTree = "<group>"; };
 		E351FAB5250A508700C8C54B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E351FAB7250A55AD00C8C54B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +154,9 @@
 				E31224AC2508FA1500DBDCE7 /* JDTabBarItem.swift */,
 				E312249B2508F95B00DBDCE7 /* JDTabBarController.swift */,
 				E31224A42508F99900DBDCE7 /* JDTabBar.swift */,
+				E314EA0725F156DC00DB0480 /* JTabBar.swift */,
+				E314EA0825F156DC00DB0480 /* JTabBarController.swift */,
+				E314EA0925F156DC00DB0480 /* JTabBarItem.swift */,
 				E334477D250B561900C028C1 /* Shape.swift */,
 			);
 			path = JDTabBar;
@@ -169,20 +176,10 @@
 			children = (
 				E351FAB2250A4F6200C8C54B /* Application */,
 				E351FAB1250A4F4C00C8C54B /* Controllers */,
-				E351FAAC250A4F4200C8C54B /* Navigation */,
 				E351FAB3250A4F7A00C8C54B /* Storyboard */,
 				E351FAB4250A4F9900C8C54B /* Resources */,
 			);
 			path = Demo;
-			sourceTree = "<group>";
-		};
-		E351FAAC250A4F4200C8C54B /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				E351FAAD250A4F4200C8C54B /* JDNavigationController.swift */,
-				E351FAAE250A4F4200C8C54B /* JDNavigationBar.swift */,
-			);
-			path = Navigation;
 			sourceTree = "<group>";
 		};
 		E351FAB1250A4F4C00C8C54B /* Controllers */ = {
@@ -211,6 +208,7 @@
 		E351FAB3250A4F7A00C8C54B /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				E314E9F825F1562E00DB0480 /* MainA.storyboard */,
 				E31224C42508FEFB00DBDCE7 /* LaunchScreen.storyboard */,
 				E31224BF2508FEFA00DBDCE7 /* Main.storyboard */,
 			);
@@ -282,7 +280,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Jawad Ali";
 				TargetAttributes = {
 					E312248E2508F87D00DBDCE7 = {
@@ -328,6 +326,7 @@
 				E31224C62508FEFB00DBDCE7 /* LaunchScreen.storyboard in Resources */,
 				E31224C32508FEFB00DBDCE7 /* Assets.xcassets in Resources */,
 				E31224C12508FEFA00DBDCE7 /* Main.storyboard in Resources */,
+				E314E9F925F1562E00DB0480 /* MainA.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,10 +338,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E31224A12508F98A00DBDCE7 /* UIStackViewFactory.swift in Sources */,
+				E314EA1625F1578400DB0480 /* JTabBarController.swift in Sources */,
 				E312249C2508F95B00DBDCE7 /* JDTabBarController.swift in Sources */,
 				E31224A92508F9AF00DBDCE7 /* CALayer+Extension.swift in Sources */,
 				E31224A52508F99900DBDCE7 /* JDTabBar.swift in Sources */,
 				E31224A72508F9A600DBDCE7 /* UIViewController+Extesion.swift in Sources */,
+				E314EA1B25F1578800DB0480 /* JTabBar.swift in Sources */,
+				E314EA1125F1578000DB0480 /* JTabBarItem.swift in Sources */,
 				E31224B22508FA3700DBDCE7 /* YAPLayoutAttributes.swift in Sources */,
 				E334477E250B561900C028C1 /* Shape.swift in Sources */,
 				E31224A22508F98A00DBDCE7 /* UILabelFactory.swift in Sources */,
@@ -361,11 +363,9 @@
 				E31224CE2509000800DBDCE7 /* PinkViewController.swift in Sources */,
 				E31224D02509000800DBDCE7 /* BViewController.swift in Sources */,
 				E31224BE2508FEFA00DBDCE7 /* ViewController.swift in Sources */,
-				E351FAB0250A4F4300C8C54B /* JDNavigationBar.swift in Sources */,
 				E31224BA2508FEFA00DBDCE7 /* AppDelegate.swift in Sources */,
 				E351FAB6250A508700C8C54B /* HomeViewController.swift in Sources */,
 				E31224BC2508FEFA00DBDCE7 /* SceneDelegate.swift in Sources */,
-				E351FAAF250A4F4300C8C54B /* JDNavigationController.swift in Sources */,
 				E31224CF2509000800DBDCE7 /* AViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +418,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -481,6 +482,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
